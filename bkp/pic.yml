@@ -1,4 +1,5 @@
 # Get profile picture and saves it as assets/avatar.png
+name: Get profile picture
 
 on:
   push:
