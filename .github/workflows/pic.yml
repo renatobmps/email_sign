@@ -1,0 +1,13 @@
+# Get profile picture and saves it as assets/avatar.png
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+jobs:
+  get-pic:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get profile picture
+        run: curl https://api.github.com/users/renatobmps | grep '"avatar_url":' | sed -E 's/.*"([^"]+)".*/\1/' | xargs curl -o assets/avatar.png
