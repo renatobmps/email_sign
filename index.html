@@ -12,7 +12,7 @@
     style="background: url('https://renatobmps.github.io/email_sign/assets/bg.svg'); background: radial-gradient(at top right, #000099, #08004b, #000000); border-radius: 8px; font: 12px tahoma, arial, verdana;color: #fff; padding: 12px; width: fit-content;">
     <tr>
       <th rowspan="4">
-        <img class="profile" src="https://renatobmps.github.io/email_sign/assets/avatar.png"
+        <img class="profile" src="https://avatars.githubusercontent.com/u/54485783?v=4"
           onerror="this.onerror=null; this.src='https://renatobmps.github.io/email_sign/assets/personal.jpg';"
           alt="Profile photo"
           style="border-radius: 64px; height: 100px; margin: auto 0; margin-right: 16px; object-fit: cover; width: 100px;">
@@ -26,7 +26,7 @@
     </tr>
     <tr>
       <td colspan="4">
-        <small style="display: block;margin-bottom: 8px; color: #fff;">Full Stack developer</small>
+        <small style="display: block;margin-bottom: 8px; color: #fff;">Full Stack Developer</small>
       </td>
     </tr>
     <tr>
@@ -65,26 +65,12 @@
       <td>
         <a href="https://api.whatsapp.com/send?phone=5511947689391" target="_blank">
           <img src="https://renatobmps.github.io/email_sign/assets/wp.svg"
-            onerror="this.onerror=null; this.src='https://renatobmps.github.io/email_sign/assets/wp.png';" alt="WhatsApp"
-            style="border-radius: 4px; object-fit: fill; width: auto;">
+            onerror="this.onerror=null; this.src='https://renatobmps.github.io/email_sign/assets/wp.png';"
+            alt="WhatsApp" style="border-radius: 4px; object-fit: fill; width: auto;">
         </a>
       </td>
-      </tr>
-      </table>
-
-  <script>
-    async function run() {
-      const githubResponse = await fetch('https://api.github.com/users/renatobmps');
-      const githubData = await githubResponse.json();
-  
-      const { avatar_url } = githubData;
-  
-      const avatarImg = document.querySelector('img.profile');
-      avatarImg.src = avatar_url;
-    }
-
-    run();
-  </script>
+    </tr>
+    </table>
 </body>
 
 </html>
