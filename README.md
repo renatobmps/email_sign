@@ -1,2 +1,47 @@
 # sign
 
+<table style="background: url('https://renatobmps.github.io/email_sign/assets/bg.svg'); background: radial-gradient(at top right, #000099, #08004b, #000000); border-radius: 8px; font: 12px tahoma, arial, verdana;color: #fff; padding: 12px; width: fit-content;">
+  <tr>
+    <th rowspan="4">
+      <img class="profile" src="https://avatars.githubusercontent.com/u/54485783?v=4" onerror="this.onerror=null; this.src='https://renatobmps.github.io/email_sign/assets/personal.jpg';" alt="Profile photo" style="border-radius: 64px; height: 100px; margin: auto 0; margin-right: 16px; object-fit: cover; width: 100px;">
+    </th>
+    <td colspan="4">
+      <h1 style="font-size: 16px; text-transform: uppercase; font-weight: 900; margin: 0; margin-bottom: 8px; color: #fff;">Renato Brandão Martins Pinheiro Silva</h1>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <small style="display: block;margin-bottom: 8px; color: #fff;">Full Stack Developer</small>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <a href="tel:+5511947689391" target="_blank" style="color: #fff;text-decoration: none; margin-bottom: 8px; display: block;">+55 11 94768-9391</a>
+    </td>
+    <td colspan="2">
+      <a href="mailto:renatobmpsilva@duck.com" target="_blank" style="color: #fff;text-decoration: none; margin-bottom: 8px; display: block;">renatobmpsilva@duck.com</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/renatobmps/" target="_blank">
+        <img src="https://renatobmps.github.io/email_sign/assets/github.svg" onerror="this.onerror=null; this.src='https://renatobmps.github.io/email_sign/assets/github.png';" alt="Github" style="border-radius: 4px; object-fit: fill; width: auto;">
+      </a>
+    </td>
+    <td>
+      <a href="https://linkedin.com/in/renatobmps/" target="_blank">
+        <img src="https://renatobmps.github.io/email_sign/assets/linkedin.svg" onerror="this.onerror=null; this.src='https://renatobmps.github.io/email_sign/assets/linkedin.png';" alt="LinkedIn" style="border-radius: 4px; object-fit: fill; width: auto;">
+      </a>
+    </td>
+    <td>
+      <a href="https://instagram.com/renatobmps/" target="_blank">
+        <img src="https://renatobmps.github.io/email_sign/assets/instagram.svg" onerror="this.onerror=null; this.src='https://renatobmps.github.io/email_sign/assets/instagram.png';" alt="Instagram" style="border-radius: 4px; object-fit: fill; width: auto;">
+      </a>
+    </td>
+    <td>
+      <a href="https://api.whatsapp.com/send?phone=5511947689391" target="_blank">
+        <img src="https://renatobmps.github.io/email_sign/assets/wp.svg" onerror="this.onerror=null; this.src='https://renatobmps.github.io/email_sign/assets/wp.png';" alt="WhatsApp" style="border-radius: 4px; object-fit: fill width: auto;">
+      </a>
+    </td>
+  </tr>
+</table>
