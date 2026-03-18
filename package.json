@@ -1,0 +1,11 @@
+{
+  "name": "email_sign",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "screenshot": "node scripts/screenshot.js"
+  },
+  "dependencies": {
+    "puppeteer": "^24.39.1"
+  }
+}

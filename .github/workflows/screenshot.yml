@@ -1,0 +1,59 @@
+name: Update demo screenshot
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'index.html'
+  workflow_dispatch:
+
+jobs:
+  screenshot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Install Chromium deps (for Puppeteer)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libatk1.0-0 \
+            libatk-bridge2.0-0 \
+            libcups2 \
+            libdrm2 \
+            libgbm1 \
+            libgtk-3-0 \
+            libnspr4 \
+            libnss3 \
+            libx11-xcb1 \
+            libxcomposite1 \
+            libxdamage1 \
+            libxrandr2 \
+            libxss1 \
+            libxtst6
+
+      - name: Generate screenshot
+        run: npm run screenshot
+
+      - name: Commit & push updated screenshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet -- assets/demo-screenshot.png; then
+            git add assets/demo-screenshot.png
+            git commit -m "Update demo screenshot"
+            git push
+          else
+            echo "No changes to screenshot."
+          fi
