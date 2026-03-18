@@ -1,20 +1,20 @@
-import { existsSync } from 'node:fs';
-import { resolve, join } from 'node:path';
-import { launch } from 'puppeteer';
+const fs = require('node:fs');
+const path = require('path');
+const puppeteer = require('puppeteer');
 
 (async () => {
-  const repoRoot = resolve(__dirname, '..');
-  const indexPath = join(repoRoot, 'index.html');
-  const outputPath = join(repoRoot, 'assets', 'demo-screenshot.png');
+  const repoRoot = path.resolve(__dirname, '..');
+  const indexPath = path.join(repoRoot, 'index.html');
+  const outputPath = path.join(repoRoot, 'assets', 'demo-screenshot.png');
 
-  if (!existsSync(indexPath)) {
+  if (!fs.existsSync(indexPath)) {
     console.error('ERROR: index.html not found at', indexPath);
     process.exit(1);
   }
 
   const url = `file://${indexPath}`;
 
-  const browser = await launch({
+  const browser = await puppeteer.launch({
     args: ['--no-sandbox', '--disable-setuid-sandbox'],
   });
   try {
